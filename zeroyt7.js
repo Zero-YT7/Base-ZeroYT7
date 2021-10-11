@@ -1,8 +1,16 @@
-//"use-gak use wkwk"
+//NEW BASE BY ZERO YT7
+//RECODE SESUKA HATIMU JANGAN HPUS CREATOR NYA
+//MAAF BASE NYA JELEK
 
-owner = '6283862323152'
+//FOLLOW ALL SOSIAL MEDIAML ME
+//YOUTUBE : Zero YT7
+//INSTAGRAM : @Zero_YT7
+//TIKTOK : @_zeroyt7
+//GITHUB : Zero-YT7
+
+owner = '6285157740529'
 botname = 'Cyber Zero'
-botinfo = 'Zeroyt7'
+botinfo = 'Zero YT7'
 
 const { fetchJosn, fetchText } = require('./lib/fetcher')
 const { color, bgcolor } = require('./lib/color')
@@ -37,8 +45,12 @@ const fetch = require('node-fetch')
 const ffmpeg = require('fluent-ffmpeg')
 const { removeBackgroundFromImageFile } = require('remove.bg')
 
+//━━━━━━━━━━━━━━━[ DATABASE ]━━━━━━━━━━━━━━━━━//
+
 const _antilink = JSON.parse(fs.readFileSync('./database/antilink.json'))
 const _antivirtex = JSON.parse(fs.readFileSync('./database/antivirtex.json'))
+
+//━━━━━━━━━━━━━━━[ MODUL EXPORTS ]━━━━━━━━━━━━━━━━━//
 
 module.exports = zeroyt7 = async (zeroyt7, mek) => {
 	try {
@@ -84,6 +96,8 @@ module.exports = zeroyt7 = async (zeroyt7, mek) => {
 		const isOwner = ownerNumber.includes(sender)
 		const isMybot = isOwner || mek.key.fromMe
 
+//━━━━━━━━━━━━━━━[ CONNECTION 1 ]━━━━━━━━━━━━━━━━━//
+
 		mess = {
 			wait: 'Sabar Lagi Proses Tod...!',
 			success: 'Done Jangan Lupa Subscribe Zero YT7',
@@ -96,6 +110,7 @@ module.exports = zeroyt7 = async (zeroyt7, mek) => {
 				group: 'Khusus Group Tod !'
 			}
 		}
+		zeroyt7.chatRead(from, "read")
 		const isUrl = (url) => {
         return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%.+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%+.~#?&/=]*)/, 'gi'))
         }
@@ -108,7 +123,22 @@ module.exports = zeroyt7 = async (zeroyt7, mek) => {
         const mentions = (teks, memberr, id) => {
             (id == null || id == undefined || id == false) ? zeroyt7.sendMessage(from, teks.trim(), extendedText, { contextInfo: { "mentionedJid": memberr } }) : zeroyt7.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": memberr } })
         }
-        zeroyt7.chatRead(from, "read")
+        
+//━━━━━━━━━━━━━━━[ BUTTON ]━━━━━━━━━━━━━━━━━//
+
+        const sendButton = async (from, context, fortext, but, mek) => {
+            buttonMessages = {
+                contentText: context,
+                footerText: fortext,
+                buttons: but,
+                headerType: 1
+            }
+            zeroyt7.sendMessage(from, buttonMessages, buttonsMessage, {
+                quoted: mek
+            })
+        }
+        
+//━━━━━━━━━━━━━━━[ CONNECTION 2 ]━━━━━━━━━━━━━━━━━//
 
         const sendStickerFromUrl = async(to, url) => {
                 var names = Date.now() / 10000;
@@ -184,7 +214,8 @@ module.exports = zeroyt7 = async (zeroyt7, mek) => {
 			}, 0)
 		}
 
-//========================================================================================================================//
+//━━━━━━━━━━━━━━━[ CONNECTION 3 ]━━━━━━━━━━━━━━━━━//
+
 		colors = ['red', 'white', 'black', 'blue', 'yellow', 'green']
 		const isMedia = (type === 'imageMessage' || type === 'videoMessage')
 		const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
@@ -195,7 +226,9 @@ module.exports = zeroyt7 = async (zeroyt7, mek) => {
       	//if (!isGroup && !isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mTEXT\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
      	if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
       	//if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mTEXT\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
-	
+
+//━━━━━━━━━━━━━━━[ MENU ]━━━━━━━━━━━━━━━━━//
+
 switch (command) {
 	case 'menu':
 	case 'help':
@@ -210,6 +243,9 @@ switch (command) {
 	✎ ${prefix}kick`
 	zeroyt7.sendMessage(from, menunya, text, {quoted: mek})
 	break
+	
+//━━━━━━━━━━━━━━━[ FITUR GROUP ]━━━━━━━━━━━━━━━━━//
+
 	case 'antilink' :
 				if (!isGroup) return reply(mess.only.group)
 				if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
@@ -350,6 +386,9 @@ switch (command) {
 					zeroyt7.groupRemove(from, mentioned)
 				}
 				break
+				
+//━━━━━━━━━━━━━━━[ AKHIR DARI SEMUA FITUR ]━━━━━━━━━━━━━━━━━//
+				
 default:
 if (isOwner) {
 			if (budy.startsWith('>')) {
