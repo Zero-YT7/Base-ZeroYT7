@@ -8,11 +8,6 @@
 //TIKTOK : @_zeroyt7
 //GITHUB : Zero-YT7
 
-owner = '6285157740529'
-botname = 'CYBERZERO BOT'
-zerokey = 'apikey kalian'
-ownername = 'Zero YT7'
-
 const { fetchJosn, fetchText } = require('./lib/fetcher')
 const { color, bgcolor } = require('./lib/color')
 const { wait, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, start, info, success, close } = require('./lib/functions')
@@ -50,6 +45,14 @@ const { removeBackgroundFromImageFile } = require('remove.bg')
 
 const _antilink = JSON.parse(fs.readFileSync('./database/antilink.json'))
 const _antivirtex = JSON.parse(fs.readFileSync('./database/antivirtex.json'))
+const setting = JSON.parse(fs.readFileSync('./setting.json'))
+
+//━━━━━━━━━━━━━━━[ SETTING ]━━━━━━━━━━━━━━━━━//
+
+owner = setting.OwnerNumber
+botname = setting.BotName
+zerokey = setting.ZeroKey
+ownername = setting.OwnerName
 
 //━━━━━━━━━━━━━━━[ MODUL EXPORTS ]━━━━━━━━━━━━━━━━━//
 
