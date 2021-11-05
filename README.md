@@ -6,6 +6,19 @@
 
 </p>
 
+<p align="center">
+
+- 👼 My name is Febz
+
+- 🗣️ I am 16 years old 
+
+- 🔭 I am not programmer
+ 
+- 😎 I am like Wibu
+</p>
+
+------
+
 # ```BASE SC ZERO YT7```
 <p align="center">
 <a href="https://github.com/Zero-YT7/followers"><img title="Followers" src="https://img.shields.io/github/followers/Zero-YT7?color=red&style=flat-square"></a>
@@ -22,10 +35,22 @@
 
 -------
 
-## `FOLLOW SOSIAL MEDIA ME`
-- [Youtube](https://youtube.com/ZeroYT7)
-- [Instagram](https://instagram.com/ZeroYT7)
-- [Tiktok](https://tiktok.com/@_zeroyt7)
+## `FOLLOW ALL SOSIALMEDIA ME`
+<p align="center">
+
+  <a href="https://instagram.com/ZeroYT7"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/> 
+
+  <a href="https://wa.me/6285157740529"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+
+  <a href="https://youtube.com/ZeroYT7"><img src="https://img.shields.io/badge/YouTube Zero YT7-ff0000?style=for-the-badge&logo=youtube&logoColor=ff0000&link=https://youtube.com/ZeroYT7" /><br>
+
+
+
+  <a href="https://youtube.com/Zero-YT7"><img src="https://img.shields.io/youtube/channel/subscribers/ZeroYT7?style=social" /> <br>
+
+  <a href="https://komarev.com/ghpvc/?username=febzofc&color=blue&style=flat-square&label=Profile+Views"><img title="Watching" src="https://komarev.com/ghpvc/?username=febzofc&color=blue&style=flat-square&label=Profile+View"></a>
+
+</p>
 
 ## `SETTING`
 
