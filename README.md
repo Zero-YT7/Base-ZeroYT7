@@ -14,7 +14,7 @@
 
 -------
 
-##FOLLOW SOSIAL MEDIA ME
+## `FOLLOW SOSIAL MEDIA ME`
 - [Youtube](https://youtube.com/ZeroYT7)
 - [Instagram](https://instagram.com/ZeroYT7)
 - [Tiktok](https://tiktok.com/@_zeroyt7)
