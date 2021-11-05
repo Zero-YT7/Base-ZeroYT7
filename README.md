@@ -9,7 +9,7 @@
 
 - 🗣️ I am 18 years old 
 
-- 🔭 I am programmer
+- 🔭 I am Not programmer
  
 - 😎 I am like Wibu
 </p>
