@@ -8,11 +8,11 @@
 
 <p align="center">
 
-- 👼 My name is Febz
+- 👼 My name is Zero YT7
 
-- 🗣️ I am 16 years old 
+- 🗣️ I am 18 years old 
 
-- 🔭 I am not programmer
+- 🔭 I am programmer
  
 - 😎 I am like Wibu
 </p>
@@ -44,7 +44,7 @@
 
   <a href="https://youtube.com/ZeroYT7"><img src="https://img.shields.io/badge/YouTube Zero YT7-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://youtube.com/ZeroYT7" /><br>
 
-  <a href="https://tiktok.com/@_zeroyt7"><img src="https://img.shields.io/badge/Tiktok Zero YT7-ff000000?style=for-the-badge&logo=tiktok&logoColor=black&link=https://tiktok.com/@zeroyt7" /><br>
+  <a href="https://tiktok.com/@_zeroyt7"><img src="https://img.shields.io/badge/Tiktok Zero YT7-black?style=for-the-badge&logo=tiktok&logoColor=ff000000&link=https://tiktok.com/@zeroyt7" /><br>
 
 
 </p>
