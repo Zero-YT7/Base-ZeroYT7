@@ -61,7 +61,7 @@
 
 ## ```GROUP BOT```
 
-- [`ZERO YT7`](https://chat.whatsapp.com/BM0HVJKYR2BI8JJUlQO2ue)
+- [`GROUP WA`](https://chat.whatsapp.com/BM0HVJKYR2BI8JJUlQO2ue)
 
 # Requirements
 * [Node.js](https://nodejs.org/en/)
