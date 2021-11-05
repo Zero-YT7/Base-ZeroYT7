@@ -35,7 +35,7 @@
 
 -------
 
-## `FOLLOW ALL SOSIALMEDIA ME`
+## ```FOLLOW ALL SOSIALMEDIA ME```
 <p align="center">
 
   <a href="https://instagram.com/ZeroYT7"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/> 
@@ -45,8 +45,11 @@
   <a href="https://youtube.com/ZeroYT7"><img src="https://img.shields.io/badge/YouTube Zero YT7-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://youtube.com/ZeroYT7" /><br>
 
   <a href="https://tiktok.com/@_zeroyt7"><img src="https://img.shields.io/badge/Tiktok Zero YT7-black?style=for-the-badge&logo=tiktok&logoColor=ff000000&link=https://tiktok.com/@zeroyt7" /><br>
+</p>
+<p align='center'>
+    </p>
 
-## `SETTING`
+## ```SETTING```
 
 - Owner number [Here](https://github.com/Zero-YT7/Base-ZeroYT7/blob/master/setting.json#L4)
 - Owner name [Here](https://github.com/Zero-YT7/Base-ZeroYT7/blob/master/setting.json#L13)
