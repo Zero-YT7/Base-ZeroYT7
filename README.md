@@ -14,6 +14,11 @@
 
 -------
 
+##FOLLOW SOSIAL MEDIA ME
+- [Youtube](https://youtube.com/ZeroYT7)
+- [Instagram](https://instagram.com/ZeroYT7)
+- [Tiktok](https://tiktok.com/@_zeroyt7)
+
 ## `SETTING`
 
 - Owner number [Here](https://github.com/Zero-YT7/Base-ZeroYT7/blob/master/setting.json#L4)
