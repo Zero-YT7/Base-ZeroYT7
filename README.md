@@ -42,9 +42,9 @@
 
   <a href="https://wa.me/6285157740529"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
-  <a href="https://youtube.com/ZeroYT7"><img src="https://img.shields.io/badge/YouTube Zero YT7-ff0000?style=for-the-badge&logo=youtube&logoColor=ff0000&link=https://youtube.com/ZeroYT7" /><br>
+  <a href="https://youtube.com/ZeroYT7"><img src="https://img.shields.io/badge/YouTube Zero YT7-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://youtube.com/ZeroYT7" /><br>
 
-  <a href="https://tiktok.com/@_zeroyt7"><img src="https://img.shields.io/badge/Tiktok Zero YT7-ff000000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://tiktok.com/@zeroyt7" /><br>
+  <a href="https://tiktok.com/@_zeroyt7"><img src="https://img.shields.io/badge/Tiktok Zero YT7-ff000000?style=for-the-badge&logo=tiktok&logoColor=ff000000&link=https://tiktok.com/@zeroyt7" /><br>
 
 
 </p>
