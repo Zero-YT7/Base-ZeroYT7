@@ -44,15 +44,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Errs404"
+    "url": "git+https://github.com/Zero-YT7"
   },
   "keywords": [
     "Wasu"
   ],
-  "author": "Prassz",
+  "author": "Zero YT7",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Errs404/Base-Self-Zero/issue"
+    "url": "https://github.com/Zero-YT7/Base-ZeroYT7/issue"
   },
-  "homepage": "https://github.com/Errs404/Errs404"
+  "homepage": "https://github.com/Zero-YT7/Zero-YT7"
 }
