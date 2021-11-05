@@ -43,9 +43,10 @@ const { removeBackgroundFromImageFile } = require('remove.bg')
 
 //━━━━━━━━━━━━━━━[ DATABASE ]━━━━━━━━━━━━━━━━━//
 
-const _antilink = JSON.parse(fs.readFileSync('./database/antilink.json'))
-const _antivirtex = JSON.parse(fs.readFileSync('./database/antivirtex.json'))
-const setting = JSON.parse(fs.readFileSync('./setting.json'))
+let _antilink = JSON.parse(fs.readFileSync('./database/antilink.json'))
+let _antivirtex = JSON.parse(fs.readFileSync('./database/antivirtex.json'))
+let setting = JSON.parse(fs.readFileSync('./setting.json'))
+let pendaftar = JSON.parse(fs.readFileSync('./database/user.json'))
 
 //━━━━━━━━━━━━━━━[ SETTING ]━━━━━━━━━━━━━━━━━//
 
@@ -100,6 +101,7 @@ module.exports = zeroyt7 = async (zeroyt7, mek, _welkom) => {
 		const isWelkom = isGroup ? _welkom.includes(from) : false
 		const isAntiVirtex = isGroup ? _antivirtex.includes(from) : false
 		const isOwner = ownerNumber.includes(sender)
+		const isUser = pendaftar.includes(sender)
 		const isMybot = isOwner || mek.key.fromMe
 		
 //━━━━━━━━━━━━━━━[ CONNECTION 1 ]━━━━━━━━━━━━━━━━━//
@@ -133,6 +135,47 @@ module.exports = zeroyt7 = async (zeroyt7, mek, _welkom) => {
         const costum = (pesan, tipe, target, target2) => {
 			zeroyt7.sendMessage(from, pesan, tipe, { quoted: { key: { fromMe: false, participant: `${target}`, ...(from ? { remoteJid: from } : {}) }, message: { conversation: `${target2}` } } })
 		}
+		const runtime = function (seconds) {
+  seconds = Number(seconds);
+  var d = Math.floor(seconds / (3600 * 24));
+  var h = Math.floor((seconds % (3600 * 24)) / 3600);
+  var m = Math.floor((seconds % 3600) / 60);
+  var s = Math.floor(seconds % 60);
+  var dDisplay = d > 0 ? d + (d == 1 ? " hari, " : " Hari, ") : "";
+  var hDisplay = h > 0 ? h + (h == 1 ? " jam, " : " Jam, ") : "";
+  var mDisplay = m > 0 ? m + (m == 1 ? " menit, " : " Menit, ") : "";
+  var sDisplay = s > 0 ? s + (s == 1 ? " detik" : " Detik") : "";
+  return dDisplay + hDisplay + mDisplay + sDisplay;
+};
+var ase = new Date();
+                        var jamss = ase.getHours();
+                         switch(jamss){
+                case 0: jamss = "Jangan gadang kak"; break;
+                case 1: jamss = "Jangan gadang kak"; break;
+                case 2: jamss = "Jangan gadang kak"; break;
+                case 3: jamss = "Jangan gadang kak"; break;
+                case 4: jamss = "Jangan lupa sholat Subuh kak"; break;
+                case 5: jamss = "Selamat pagi"; break;
+                case 6: jamss = "Selamat pagi"; break;
+                case 7: jamss = "Selamat pagi"; break;
+                case 8: jamss = "Selamat pagi"; break;
+                case 9: jamss = "Selamat pagi"; break;
+                case 10: jamss = "Selamat pagi"; break;
+                case 11: jamss = "Selamat siang"; break;
+                case 12: jamss = "Jangan lupa sholat Zuhur kak"; break;
+                case 13: jamss = "Selamat siang"; break;
+                case 14: jamss = "Selamat sore"; break;
+                case 15: jamss = "Jangan lupa sholat Ashar kak"; break;
+                case 16: jamss = "Selamat sore"; break;
+                case 17: jamss = "Selamat sore"; break;
+                case 18: jamss = "Selamat malam"; break;
+                case 19: jamss = "Jangan lupa sholat Isya kak"; break;
+                case 20: jamss = "Selamat malam"; break;
+                case 21: jamss = "Selamat malam"; break;
+                case 22: jamss = "Selamat malam"; break;
+                case 23: jamss = "Selamat malam"; break;
+            }
+            var tampilUcapan = "" + jamss;
         
 //━━━━━━━━━━━━━━━[ BUTTON ]━━━━━━━━━━━━━━━━━//
 
@@ -158,12 +201,12 @@ module.exports = zeroyt7 = async (zeroyt7, mek, _welkom) => {
             }
             zeroyt7.sendMessage(from, buttonMessagesI, buttonsMessage, {
                 quoted: ftrol,
-                contexInfo: adyt
             })
         }
-        //sendButLoc(id/from, "string", "string", image, but, mek)
-         function _0x49e8(){const _0x2abf1f=['128458zaqRph','15LuvETp','32FoIOpf','By\x20:\x20Prassz','307917pLgBPR','Zerobot~Prassz','127514DLEruK','2301110zFGGkR','11iUrhyl','5IBSTLg','sendMessage','2099160NwtLDQ','672988HpVyoZ','1059558OLmAKI'];_0x49e8=function(){return _0x2abf1f;};return _0x49e8();}(function(_0x4b5fea,_0xcd96a7){const _0xd54c3c=_0x9a06,_0x555513=_0x4b5fea();while(!![]){try{const _0x4e06eb=parseInt(_0xd54c3c(0x12b))/0x1+parseInt(_0xd54c3c(0x123))/0x2*(parseInt(_0xd54c3c(0x12c))/0x3)+-parseInt(_0xd54c3c(0x129))/0x4*(parseInt(_0xd54c3c(0x126))/0x5)+-parseInt(_0xd54c3c(0x12a))/0x6+-parseInt(_0xd54c3c(0x128))/0x7+parseInt(_0xd54c3c(0x12d))/0x8*(parseInt(_0xd54c3c(0x12f))/0x9)+-parseInt(_0xd54c3c(0x124))/0xa*(-parseInt(_0xd54c3c(0x125))/0xb);if(_0x4e06eb===_0xcd96a7)break;else _0x555513['push'](_0x555513['shift']());}catch(_0x5da84c){_0x555513['push'](_0x555513['shift']());}}}(_0x49e8,0x2960e));function _0x9a06(_0x41e8cb,_0x44ab09){const _0x49e8d9=_0x49e8();return _0x9a06=function(_0x9a063c,_0x40f3e3){_0x9a063c=_0x9a063c-0x123;let _0x55b451=_0x49e8d9[_0x9a063c];return _0x55b451;},_0x9a06(_0x41e8cb,_0x44ab09);}const sendButLoc=async(_0x151338,_0x56cd7c,_0x33ce1f,_0xbff411,_0x1ecc85,_0x40a38d)=>{const _0xf018e3=_0x9a06;return buttonMessagesL={'contentText':_0x56cd7c,'footerText':_0x33ce1f,'buttons':_0x1ecc85,'headerType':0x6,'locationMessage':{'degreesLatitude':0x0,'degreesLongitude':0x0,'name':_0xf018e3(0x130),'address':_0xf018e3(0x12e),'jpegThumbnail':_0xbff411}},zeroyt7[_0xf018e3(0x127)](_0x151338,buttonMessagesL,buttonsMessage,{'quoted':_0x40a38d});};
-
+        async function sendButLocation(id, text1, desc1, gam1, but = [], options = {}) {
+            const buttonMessages = { locationMessage: { jpegThumbnail: gam1 }, contentText: text1, footerText: desc1, buttons: but, headerType: 6 }
+            return zeroyt7.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
+        }
 
 //━━━━━━━━━━━━━━━[ FAKE FAKEAN ]━━━━━━━━━━━━━━━━━//
         const fakestatus = (teks) => {
@@ -308,7 +351,10 @@ reply(`「 *VIRTEX DETECTOR* 」\n\nKamu mengirimkan virtex, maaf kamu di kick d
 console.log(color('[KICK]', 'red'), color('Received a virus text!', 'yellow'))
 zeroyt7.groupRemove(from, [sender])
 }     
-
+if (isCmd && !isUser){
+          pendaftar.push(sender)
+          fs.writeFileSync('./database/user.json', JSON.stringify(pendaftar, null, 2))
+        }
 
 //━━━━━━━━━━━━━━━[ CONNECTION 3 ]━━━━━━━━━━━━━━━━━//
 
@@ -327,59 +373,122 @@ zeroyt7.groupRemove(from, [sender])
 
 switch (command) {
 	case 'menu':
-	menunya = `✮Group Menu✮
-	✎ ${prefix}antilink
-	✎ ${prefix}welcome
-	✎ ${prefix}antivirtex
-	✎ ${prefix}group
-	✎ ${prefix}linkgrup
-	✎ ${prefix}promote
-	✎ ${prefix}demote
-	✎ ${prefix}add
-	✎ ${prefix}kick
-	✎ ${prefix}setpp
-	✎ ${prefix}setdesc
-	✎ ${prefix}setname
-	✎ ${prefix}hidetag
+	gambar = fs.readFileSync('./zeroyt7/zero.jpg')
+                   timestamp = speed();
+				latensi = speed() - timestamp
+              menunya = 
+`Hi ${pushname}, ${tampilUcapan}✨
+Saya ${botname} Yg Siap Membantu Anda Dalam Kinerja Whatsapp Agar Mempermudah Seperti Membuat Sticker , Dll
+
+╭─❒ 「 Bot Info 」 ❒
+├ Nama Bot : ${botname}
+├ Nama Owner : ${ownername}
+├ Prefix : Multi Prefix
+├ Nomor Owner : ${owner.split('@')[0]}
+├ Runtime : ${runtime(process.uptime())}
+├ Language : Javascript & Nodejs
+├ Totan Pengguna : ${pendaftar.length}
+├ Speed : ${latensi.toFixed(4)} second
+└❏
+╭─❒ 「 User Info 」 ❒
+├ Status : ${isOwner ? 'Owner' : 'User'}
+├ Nama User : ${pushname}
+├ Nomor User : ${sender.split('@')[0]}
+└❏
+
+╭─⬣「 Group Menu 」⬣
+│ あ ${prefix}antilink
+│ あ ${prefix}welcome
+│ あ ${prefix}antivirtex
+│ あ ${prefix}group
+│ あ ${prefix}linkgrup
+│ あ ${prefix}promote
+│ あ ${prefix}demote
+│ あ ${prefix}add
+│ あ ${prefix}kick
+│ あ ${prefix}setpp
+│ あ ${prefix}setdesc
+│ あ ${prefix}setname
+│ あ ${prefix}hidetag
+└⬣
+
+╭─⬣「 Sticker Menu 」⬣
+│ あ ${prefix}attp
+│ あ ${prefix}toimg
+│ あ ${prefix}sticker
+│ あ ${prefix}tomp3
+│ あ ${prefix}tovideo
+└⬣
 	
-	✮Sticker Menu✮
-	✎ ${prefix}attp
-	✎ ${prefix}sticker
-	✎ ${prefix}tomp3
-	✎ ${prefix}tovideo
-	
-	✮Owner Menu✮
-	✎ ${prefix}owner
-	✎ ${prefix}sewabot
-	✎ ${prefix}bc
-	✎ ${prefix}report
-	
-	Note : Fitur Masih Dikit Karena Baru Jadi
-	Next Update Bakal Di Tambahin
-	Jangan Lupa Subscribe Zero YT7
-`
-zeroyt7.sendMessage(from, menunya, text, {quoted: ftrol})
-	break
+╭─⬣「 Owner Menu 」⬣
+│ あ ${prefix}owner
+│ あ ${prefix}sewabot
+│ あ ${prefix}bc
+│ あ ${prefix}report
+└⬣`
+teks =
+`Ini Base Buatan Zero YT7 Silahkan Di Pake Jika Ingin Recode Atau Reupload Tolong Creator Jangan Hpus Tolong Hargai Karya Orang 🙏`
+but = [
+          { buttonId: `${prefix}infobot`, buttonText: { displayText: 'INFO' }, type: 1 },
+          { buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER' }, type: 1 }
+        ]
+        sendButLocation(from, menunya, teks, gambar, but)
+break
+case 'infobot':
+timestamp = speed();
+				latensi = speed() - timestamp
+                  	teks =
+`┏━➤ *INFO BOT* 
+*┃┃* Creator Bot : Zero YT7
+*┃┃* Nama Owner : ${ownername}
+*┃┃* Nama Bot : ${botname}
+*┃┃* Prefix : Multi Prefix
+*┃┃* Total Pengguna : ${pendaftar.length}
+*┃┃* Runtime : ${runtime(process.uptime())}
+*┃┃* Speed : ${latensi.toFixed(4)} second
+*┃┃* Language : Javascript & Nodejs
+*┃┗━━━━━━━━*
+*┃◗ Thanks To Allah S.W.T*
+*┃◗ Thank To Ortu*
+*┃◗ Thank To Zero YT7 (Creator)*
+*┃◗ Thanks To All Subscriberku*
+*┗━━━━━━━ •*`
+                  but = [
+          { buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER' }, type: 1 },
+          { buttonId: `${prefix}sc`, buttonText: { displayText: 'SCRIPT' }, type: 1 }
+        ]
+        sendButton(from, teks, '©Created : Zero YT7', but, mek)
+break
 	
 //━━━━━━━━━━━━━━━[ FITUR GROUP ]━━━━━━━━━━━━━━━━━//
 
 case 'welcome':
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (args.length < 1) return reply(`Ketik :\n${prefix}welcome on untuk mengaktifkan\n${prefix}welcome off untuk menonaktifkan`)
-if ((args[0]) === 'on') {
+if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
+but = [
+{ buttonId: '!welcomeon', buttonText: { displayText: 'On' }, type: 1 },
+{ buttonId: '!welcomeoff', buttonText: { displayText: 'Off' }, type: 1 }
+]
+sendButton(from, "Silahkan pilih untuk welcome group", faketeks, but, mek)
+break
+case 'welcomeon':
+if (!isGroup) return reply(mess.only.group)
+if (!isGroupAdmins) return reply(mess.only.admin)
+if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
 if (isWelkom) return reply('welcome sudah aktif')
 _welkom.push(from)
 fs.writeFileSync('./database/welcome.json', JSON.stringify(_welkom))
 reply(`\`\`\`✓Sukses mengaktifkan fitur welcome di group\`\`\` *${groupMetadata.subject}*`)
-} else if ((args[0]) === 'off') {
+break
+case 'welcomeoff':
+if (!isGroup) return reply(mess.only.group)
+if (!isGroupAdmins) return reply(mess.only.admin)
+if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
 if (!isWelkom) return reply('welcome sudah off sebelumnya')
 _welkom.splice(from, 1)
 fs.writeFileSync('./database/welcome.json', JSON.stringify(_welkom))
 reply(`\`\`\`✓Sukses menonaktifkan fitur welcome di group\`\`\` *${groupMetadata.subject}*`)
-} else {
-reply('on untuk mengaktifkan, off untuk menonaktifkan')
-}
 break
 case 'antilink' :
 if (!isGroup) return reply(mess.only.group)
@@ -719,20 +828,35 @@ break
 //━━━━━━━━━━━━━━━[ FITUR OWNER ]━━━━━━━━━━━━━━━━━//
 
 case 'owner':
-members_ids = []
-for (let mem of groupMembers) {
-members_ids.push(mem.jid)
-}
-vcard2 = 'BEGIN:VCARD\n'
+let inilist = []
+for (let i of ownerNumber) {
+const vname = zeroyt7.contacts[i] != undefined ? zeroyt7.contacts[i].vname || zeroyt7.contacts[i].notify : undefined
+inilist.push({
+"displayName": 'ZeroYT7',
+"vcard": 'BEGIN:VCARD\n'
 + 'VERSION:3.0\n'
 + `FN:${ownername}\n`
 + `ORG: Creator ${ownername} ;\n`
 + `TEL;type=CELL;type=VOICE;waid=${owner}:${owner}\n`
 + 'END:VCARD'.trim()
-zeroyt7.sendMessage(from, {displayName: `Creator ${ownername}`, vcard: vcard2}, contact, 
-{ quoted: ftrol, 
 })
-reply('TUHH NOMER OWNER KU')
+}
+hehe = await zeroyt7.sendMessage(from, {
+"displayName": `${inilist.length} kontak`,
+"contacts": inilist 
+}, 'contactsArrayMessage', { quoted: ftrol })
+button = [
+  {buttonId: '.youtube', buttonText: {displayText: 'YOUTUBE'}, type: 1},
+  {buttonId: '.instagram', buttonText: {displayText: 'INSTAGRAM'}, type: 1},
+  {buttonId: '.tiktok', buttonText: {displayText: 'TIKTOK'}, type: 1}
+]
+ buttons = {
+    contentText: 'Nih Nomer Owner Ku Mau Tau Tentang Apa Ya ?',
+    footerText: faketeks,
+    buttons: button,
+    headerType: 1
+}
+await zeroyt7.sendMessage(from, buttons, MessageType.buttonsMessage, {quoted: ftrol})
 break
 case 'bc':
 if (!isOwner) return reply('LU BUKAN OWNER GBLOK')
@@ -763,6 +887,38 @@ contextInfo: { mentionedJid: [nomor] },
 }
 zeroyt7.sendMessage(`6285157740529@s.whatsapp.net`, options, text, { quoted: ftrol })
 reply('Masalah Telah Di Laporkan Ke Owner BOT, Mohon Tunggu Untuk Proses Perbaikan')
+break
+case 'youtube':
+teks =
+`Nih Youtube Owner Ku Jangan Lupa Di Subscribe Ya https://youtube.com/ZeroYT7`
+zeroyt7.sendMessage(from, teks, text, {quoted: ftrol})
+break
+case 'instagram':
+teks =
+`Nih Instagram Owner Ku Jangan Lupa Di Follow Ya https://instagram.com/Zero_YT7`
+zeroyt7.sendMessage(from, teks, text, {quoted: ftrol})
+break
+case 'tiktok':
+teks =
+`Nih Tiktok Owner Ku Jangan Lupa Di Follow Ya https://tiktok.com/@_zeroyt7`
+zeroyt7.sendMessage(from, teks, text, {quoted: ftrol})
+break
+
+// SC ORI + CREATOR BASE JANGAN DI HPUS TOD
+//HARGAI CREATOR
+case 'sourcecode':
+case 'script':
+case 'sc':
+teks = 
+`*Bot Ini Mengguna Sourcecode
+╭─────────────────────
+├ Sc Ori = https://github.com/Zero-YT7/Base-ZeroYT7
+├ Sc Full Fitur = https://youtube.com/ZeroYT7
+├─────────────────────
+├ Creator Base = Zero YT7
+├ Creator Sc = Zero YT7
+└─────────────────────`
+zeroyt7.sendMessage(from, teks, text, {quoted: ftrol})
 break
 default:
 if (isOwner) {
