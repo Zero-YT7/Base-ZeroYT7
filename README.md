@@ -44,7 +44,7 @@
 
   <a href="https://youtube.com/ZeroYT7"><img src="https://img.shields.io/badge/YouTube Zero YT7-ff0000?style=for-the-badge&logo=youtube&logoColor=ff0000&link=https://youtube.com/ZeroYT7" /><br>
 
-  <a href="https://tiktok.com/ZeroYT7"><img src="https://img.shields.io/badge/Tiktok Zero YT7-ff000000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://youtube.com/ZeroYT7" /><br>
+  <a href="https://tiktok.com/ZeroYT7"><img src="https://img.shields.io/badge/Tiktok Zero YT7-ff000000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://tiktok.com/@zeroyt7" /><br>
 
 
 </p>
