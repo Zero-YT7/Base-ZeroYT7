@@ -16,6 +16,6 @@
 
 ## `SETTING`
 
-- Owner number [Here](https://github.com/Zero-YT7/Base-ZeroYT7/blob/master/settings.json#L4)
-- Owner name [Here](https://github.com/Zero-YT7/Base-ZeroYT7/blob/master/settings.json#L13)
-- Botname [Here](https://github.com/Zero-YT7/Base-ZeroYT7/blob/master/settings.json#L14)
+- Owner number [Here](https://github.com/Zero-YT7/Base-ZeroYT7/blob/master/setting.json#L4)
+- Owner name [Here](https://github.com/Zero-YT7/Base-ZeroYT7/blob/master/setting.json#L13)
+- Botname [Here](https://github.com/Zero-YT7/Base-ZeroYT7/blob/master/setting.json#L14)
