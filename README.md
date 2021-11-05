@@ -44,11 +44,8 @@
 
   <a href="https://youtube.com/ZeroYT7"><img src="https://img.shields.io/badge/YouTube Zero YT7-ff0000?style=for-the-badge&logo=youtube&logoColor=ff0000&link=https://youtube.com/ZeroYT7" /><br>
 
+  <a href="https://tiktok.com/ZeroYT7"><img src="https://img.shields.io/badge/Tiktok Zero YT7-ff0000?style=for-the-badge&logo=youtube&logoColor=ff0000&link=https://youtube.com/ZeroYT7" /><br>
 
-
-  <a href="https://youtube.com/Zero-YT7"><img src="https://img.shields.io/youtube/channel/subscribers/ZeroYT7?style=social" /> <br>
-
-  <a href="https://komarev.com/ghpvc/?username=febzofc&color=blue&style=flat-square&label=Profile+Views"><img title="Watching" src="https://komarev.com/ghpvc/?username=febzofc&color=blue&style=flat-square&label=Profile+View"></a>
 
 </p>
 
