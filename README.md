@@ -45,8 +45,6 @@
   <a href="https://youtube.com/ZeroYT7"><img src="https://img.shields.io/badge/YouTube Zero YT7-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://youtube.com/ZeroYT7" /><br>
 
   <a href="https://tiktok.com/@_zeroyt7"><img src="https://img.shields.io/badge/Tiktok Zero YT7-black?style=for-the-badge&logo=tiktok&logoColor=ff000000&link=https://tiktok.com/@zeroyt7" /><br>
-
-
 </p>
 
 ## `SETTING`
