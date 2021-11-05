@@ -80,12 +80,12 @@ zeroyt7.on("group-participants-update", async (anu) => {
         let v = zeroyt7.contacts[num] || { notify: num.replace(/@.+/, "") }
         anu_user = v.vname || v.notify || num.split("@")[0]
         time_wel = moment.tz("Asia/Jakarta").format("HH:mm")
-        wel = `Halo @${anu_user} \nWelcome In ${mdata.subject} \nJangan Lupa Follow Sosial Media Ownerku\n• Youtube : https://youtube.com/ZeroYT7\n• Instagram : https://instagram.com/Zero_YT7\n• Tiktok : https://tiktok.com/@_zeroyt7\n• Github : https://github.com/Zero-YT7`
+        wel = `Halo @${anu_user} \nWelcome In ${mdata.subject} \nSelamat Datang Di Grub Kami Semoga Betah Dan Jadi Kuntu Loncat`
         buff = await getBuffer(
           `http://hadi-api.herokuapp.com/api/card/welcome?nama=${anu_user}&descriminator=${groupMembers.length
           }&memcount=${memeg}&gcname=${encodeURI(
             mdata.subject
-          )}&pp=${pp_user}&bg=https://i.ibb.co/Jqn8mQ8/20211013-212323.jpg`
+          )}&pp=${pp_user}&bg=https://i.ibb.co/YDYS80p/zero.jpg`
         )
 
         but = [
@@ -101,12 +101,12 @@ zeroyt7.on("group-participants-update", async (anu) => {
         anu_user = w.vname || w.notify || num.split("@")[0]
         time_wel = moment.tz("Asia/Jakarta").format("HH:mm")
         memeg = mdata.participants.length
-        out = `Mari Kita Doakan Bersama-Sama Buat Yang Keluar \nSayonara @${anu_user} Semoga Tenang Di Alam Sana`
+        out = `Horee... Beban Group Keluar\nSayonara @${anu_user} Semoga Tenang Di Alam Sana`
         buff = await getBuffer(
           `http://hadi-api.herokuapp.com/api/card/goodbye?nama=${anu_user}&descriminator=${groupMembers.length
           }&memcount=${memeg}&gcname=${encodeURI(
             mdata.subject
-          )}&pp=${pp_user}&bg=https://i.ibb.co/Jqn8mQ8/20211013-212323.jpg`
+          )}&pp=${pp_user}&bg=https://i.ibb.co/YDYS80p/zero.jpg`
         )
 
         but = [
