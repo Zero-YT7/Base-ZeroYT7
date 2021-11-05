@@ -70,7 +70,7 @@ zeroyt7.on("group-participants-update", async (anu) => {
           "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60"
       }
       if (anu.action == "add" && mem.includes(zeroyt7.user.jid)) {
-        zeroyt7.sendMessage(anu.jid, "Halo!.. saya ZeroBot saya akan membatu mempermudah kehidupan..seperti membuat sticker dan lain-lain. untuk meulai silahkan ketik !menu.", "conversation")
+        zeroyt7.sendMessage(anu.jid, "Halo!.. saya Zero YT7 saya akan membatu mempermudah kehidupan..seperti membuat sticker dan lain-lain. untuk memulai silahkan ketik !menu.", "conversation")
       }
       if (!isWelkom) return
       if (anu.action == "add" && !mem.includes(zeroyt7.user.jid)) {
