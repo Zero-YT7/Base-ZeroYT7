@@ -27,3 +27,18 @@
 ## ```GROUP BOT```
 
 - [`ZERO YT7`](https://chat.whatsapp.com/BM0HVJKYR2BI8JJUlQO2ue)
+
+## For Termux
+```bash
+termux-setup-storage
+apt update && apt upgrade
+pkg install nodejs
+pkg install git 
+pkg install ffmpeg
+pkg install libwebp 
+pkg install imagemagick
+pkg install bash
+git clone https://github.com/Zero-YT7/Base-ZeroYT7.git
+cd Base-ZeroYT7
+npm install
+npm start
