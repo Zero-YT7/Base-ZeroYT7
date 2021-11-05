@@ -28,6 +28,14 @@
 
 - [`ZERO YT7`](https://chat.whatsapp.com/BM0HVJKYR2BI8JJUlQO2ue)
 
+# Requirements
+* [Node.js](https://nodejs.org/en/)
+* [Git](https://git-scm.com/downloads)
+* [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip) (for sticker command)
+* [Libwebp](https://developers.google.com/speed/webp/download) (for sticker wm)
+* [Image Magic](https://imagemagick.org/script/download.php) ( for nulis command, Centang Kolom 1,2,3,5,6)
+* Any text editor
+```
 ## For Termux
 ```bash
 termux-setup-storage
@@ -42,3 +50,25 @@ git clone https://github.com/Zero-YT7/Base-ZeroYT7.git
 cd Base-ZeroYT7
 npm install
 npm start
+```
+## For Windows
+```bash
+git clone https://github.com/Zero-YT7/Base-ZeroYT7.git
+cd Base-ZeroYT7
+npm install
+npm start
+```
+## For VPS
+```bash
+apt install nodejs 
+apt install git 
+apt apt install ffmpeg 
+apt apt install libwebp 
+apt apt install imagemagick
+apt install bash
+git clone https://github.com/Zero-YT7/Base-ZeroYT7.git
+cd Base-ZeroYT7
+npm install
+npm start
+
+
