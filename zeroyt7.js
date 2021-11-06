@@ -907,7 +907,7 @@ case 'sourcecode':
 case 'script':
 case 'sc':
 teks = 
-`*Bot Ini Mengguna Sourcecode
+`*Bot Ini Menggunakan Sourcecode*
 ╭─────────────────────
 ├ Sc Ori = https://github.com/Zero-YT7/Base-ZeroYT7
 ├ Sc Full Fitur = https://youtube.com/ZeroYT7
