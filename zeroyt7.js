@@ -8,11 +8,11 @@
 //TIKTOK : @_zeroyt7
 //GITHUB : Zero-YT7
 
-const { fetchJosn, fetchText } = require('./lib/fetcher')
-const { color, bgcolor } = require('./lib/color')
-const { wait, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, start, info, success, close } = require('./lib/functions')
+let { fetchJosn, fetchText } = require('./lib/fetcher')
+let { color, bgcolor } = require('./lib/color')
+let { wait, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, start, info, success, close } = require('./lib/functions')
 
-const
+let
 	{
 		WAConnection,
 		MessageType,
@@ -65,44 +65,44 @@ module.exports = zeroyt7 = async (zeroyt7, mek, _welkom) => {
 		if (mek.key && mek.key.remoteJid == 'status@broadcast') return
 		global.blocked
         	mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
-        const content = JSON.stringify(mek.message)
-		const from = mek.key.remoteJid
-		const { text, extendedText, contact, contactsArray, groupInviteMessage, listMessage, buttonsMessage, location, liveLocation, image, video, sticker, document, audio, product, quotedMsg } = MessageType
-		const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
-        const type = Object.keys(mek.message)[0]        
-        const cmd = (type === 'conversation' && mek.message.conversation) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text ? mek.message.extendedTextMessage.text : ''.slice(1).trim().split(/ +/).shift().toLowerCase()
-        const prefix = /^[°•π÷×¶∆£¢€¥®™=|~!#$%^&.?/\\©^z+*@,;]/.test(cmd) ? cmd.match(/^[°•π÷×¶∆£¢€¥®™=|~!#$%^&.?/\\©^z+*,;]/gi) : '-'          	
+        let content = JSON.stringify(mek.message)
+		let from = mek.key.remoteJid
+		let { text, extendedText, contact, contactsArray, groupInviteMessage, listMessage, buttonsMessage, location, liveLocation, image, video, sticker, document, audio, product, quotedMsg } = MessageType
+		let time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
+        let type = Object.keys(mek.message)[0]        
+        let cmd = (type === 'conversation' && mek.message.conversation) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text ? mek.message.extendedTextMessage.text : ''.slice(1).trim().split(/ +/).shift().toLowerCase()
+        let prefix = /^[°•π÷×¶∆£¢€¥®™=|~!#$%^&.?/\\©^z+*@,;]/.test(cmd) ? cmd.match(/^[°•π÷×¶∆£¢€¥®™=|~!#$%^&.?/\\©^z+*,;]/gi) : '-'          	
         body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message[type].caption.startsWith(prefix) ? mek.message[type].caption : (type == 'videoMessage') && mek.message[type].caption.startsWith(prefix) ? mek.message[type].caption : (type == 'extendedTextMessage') && mek.message[type].text.startsWith(prefix) ? mek.message[type].text : (type == 'listResponseMessage') && mek.message[type].singleSelectReply.selectedRowId ? mek.message[type].singleSelectReply.selectedRowId : (type == 'buttonsResponseMessage') && mek.message[type].selectedButtonId ? mek.message[type].selectedButtonId : ''
 		budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
-		const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()		
-		const args = body.trim().split(/ +/).slice(1)
-		const isCmd = body.startsWith(prefix)
-		const q = args.join(' ')
-		const Verived = "0@s.whatsapp.net"
-		const txt = mek.message.conversation
-		const botNumber = zeroyt7.user.jid
-		const ownerNumber = [`${owner}@s.whatsapp.net`, `6285157740529@s.whatsapp.net`]
-		const isGroup = from.endsWith('@g.us')
+		let command = body.slice(1).trim().split(/ +/).shift().toLowerCase()		
+		let args = body.trim().split(/ +/).slice(1)
+		let isCmd = body.startsWith(prefix)
+		let q = args.join(' ')
+		let Verived = "0@s.whatsapp.net"
+		let txt = mek.message.conversation
+		let botNumber = zeroyt7.user.jid
+		let ownerNumber = [`${owner}@s.whatsapp.net`, `6285157740529@s.whatsapp.net`]
+		let isGroup = from.endsWith('@g.us')
 		let sender = isGroup ? mek.participant : mek.key.remoteJid
-		const totalchat = await zeroyt7.chats.all()
-		const groupMetadata = isGroup ? await zeroyt7.groupMetadata(from) : ''
-		const groupName = isGroup ? groupMetadata.subject : ''
-		const groupId = isGroup ? groupMetadata.jid : ''
-		const groupMembers = isGroup ? groupMetadata.participants : ''
-		const groupDesc = isGroup ? groupMetadata.desc : ''
-		const groupOwner = isGroup ? groupMetadata.owner : ''
-		const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
-		const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
-		const isGroupAdmins = groupAdmins.includes(sender) || false
-		const conts = mek.key.fromMe ? zeroyt7.user.jid : zeroyt7.contacts[sender] || { notify: jid.replace(/@.+/, '') }
-        const pushname = mek.key.fromMe ? zeroyt7.user.name : conts.notify || conts.vname || conts.name || '-'
+		let totalchat = await zeroyt7.chats.all()
+		let groupMetadata = isGroup ? await zeroyt7.groupMetadata(from) : ''
+		let groupName = isGroup ? groupMetadata.subject : ''
+		let groupId = isGroup ? groupMetadata.jid : ''
+		let groupMembers = isGroup ? groupMetadata.participants : ''
+		let groupDesc = isGroup ? groupMetadata.desc : ''
+		let groupOwner = isGroup ? groupMetadata.owner : ''
+		let groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
+		let isBotGroupAdmins = groupAdmins.includes(botNumber) || false
+		let isGroupAdmins = groupAdmins.includes(sender) || false
+		let conts = mek.key.fromMe ? zeroyt7.user.jid : zeroyt7.contacts[sender] || { notify: jid.replace(/@.+/, '') }
+        let pushname = mek.key.fromMe ? zeroyt7.user.name : conts.notify || conts.vname || conts.name || '-'
         
-		const isAntiLink = isGroup ? _antilink.includes(from) : false
-		const isWelkom = isGroup ? _welkom.includes(from) : false
-		const isAntiVirtex = isGroup ? _antivirtex.includes(from) : false
-		const isOwner = ownerNumber.includes(sender)
-		const isUser = pendaftar.includes(sender)
-		const isMybot = isOwner || mek.key.fromMe
+		let isAntiLink = isGroup ? _antilink.includes(from) : false
+		let isWelkom = isGroup ? _welkom.includes(from) : false
+		let isAntiVirtex = isGroup ? _antivirtex.includes(from) : false
+		let isOwner = ownerNumber.includes(sender)
+		let isUser = pendaftar.includes(sender)
+		let isMybot = isOwner || mek.key.fromMe
 		
 //━━━━━━━━━━━━━━━[ CONNECTION 1 ]━━━━━━━━━━━━━━━━━//
 
@@ -119,23 +119,23 @@ module.exports = zeroyt7 = async (zeroyt7, mek, _welkom) => {
 			}
 		}
 		faketeks = 'Zero YT7'
-		const isUrl = (url) => {
+		let isUrl = (url) => {
         return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%.+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%+.~#?&/=]*)/, 'gi'))
         }
-        const reply = (teks) => {
+        let reply = (teks) => {
             zeroyt7.sendMessage(from, teks, text, {quoted:mek})
         }
-        const sendMess = (hehe, teks) => {
+        let sendMess = (hehe, teks) => {
             zeroyt7.sendMessage(hehe, teks, text)
         }
-        const mentions = (teks, memberr, id) => {
+        let mentions = (teks, memberr, id) => {
             (id == null || id == undefined || id == false) ? zeroyt7.sendMessage(from, teks.trim(), extendedText, { contextInfo: { "mentionedJid": memberr } }) : zeroyt7.sendMessage(from, teks.trim(), extendedText, { quoted: ftrol, contextInfo: { "mentionedJid": memberr } })
         }
-        const zero = fs.readFileSync ('./zeroyt7/zerothumb.jpg')
-        const costum = (pesan, tipe, target, target2) => {
+        let zero = fs.readFileSync ('./zeroyt7/zerothumb.jpg')
+        let costum = (pesan, tipe, target, target2) => {
 			zeroyt7.sendMessage(from, pesan, tipe, { quoted: { key: { fromMe: false, participant: `${target}`, ...(from ? { remoteJid: from } : {}) }, message: { conversation: `${target2}` } } })
 		}
-		const runtime = function (seconds) {
+		let runtime = function (seconds) {
   seconds = Number(seconds);
   var d = Math.floor(seconds / (3600 * 24));
   var h = Math.floor((seconds % (3600 * 24)) / 3600);
@@ -179,7 +179,7 @@ var ase = new Date();
         
 //━━━━━━━━━━━━━━━[ BUTTON ]━━━━━━━━━━━━━━━━━//
 
-        const sendButton = async (from, context, fortext, but, mek) => {
+        let sendButton = async (from, context, fortext, but, mek) => {
             buttonMessages = {
                 contentText: context,
                 footerText: fortext,
@@ -190,7 +190,7 @@ var ase = new Date();
                 quoted: ftrol
             })
         }
-        const sendButImage = async (from, context, fortext, img, but, mek) => {
+        let sendButImage = async (from, context, fortext, img, but, mek) => {
             jadinya = await zeroyt7.prepareMessage(from, img, image)
             buttonMessagesI = {
                 imageMessage: jadinya.message.imageMessage,
@@ -204,12 +204,12 @@ var ase = new Date();
             })
         }
         async function sendButLocation(id, text1, desc1, gam1, but = [], options = {}) {
-            const buttonMessages = { locationMessage: { jpegThumbnail: gam1 }, contentText: text1, footerText: desc1, buttons: but, headerType: 6 }
+            let buttonMessages = { locationMessage: { jpegThumbnail: gam1 }, contentText: text1, footerText: desc1, buttons: but, headerType: 6 }
             return zeroyt7.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
         }
 
 //━━━━━━━━━━━━━━━[ FAKE FAKEAN ]━━━━━━━━━━━━━━━━━//
-        const fakestatus = (teks) => {
+        let fakestatus = (teks) => {
             zeroyt7.sendMessage(from, teks, text, {
                 quoted: {
                     key: {
@@ -237,7 +237,7 @@ var ase = new Date();
             })
         }
         zeroyt7.chatRead(from, "read")
-        const fakegroup = (teks) => {
+        let fakegroup = (teks) => {
             zeroyt7.sendMessage(from, teks, text, {
                 quoted: {
                     key: {
@@ -264,7 +264,7 @@ var ase = new Date();
                 }
             })
         }
-        const ftrol = {
+        let ftrol = {
 	key : {
                           participant : '0@s.whatsapp.net'
                         },
@@ -283,7 +283,7 @@ var ase = new Date();
         
 //━━━━━━━━━━━━━━━[ CONNECTION 2 ]━━━━━━━━━━━━━━━━━//
 
-        const sendStickerFromUrl = async(to, url) => {
+        let sendStickerFromUrl = async(to, url) => {
                 var names = Date.now() / 10000;
                 var download = function (uri, filename, callback) {
                     request.head(uri, function (err, res, body) {
@@ -302,12 +302,12 @@ var ase = new Date();
                     });
                 });
             }
-        const sendMediaURL = async(to, url, text="", mids=[]) =>{
+        let sendMediaURL = async(to, url, text="", mids=[]) =>{
                 if(mids.length > 0){
                     text = normalizeMention(to, text, mids)
                 }
-                const fn = Date.now() / 10000;
-                const filename = fn.toString()
+                let fn = Date.now() / 10000;
+                let filename = fn.toString()
                 let mime = ""
                 var download = function (uri, filename, callback) {
                     request.head(uri, function (err, res, body) {
@@ -359,11 +359,11 @@ if (isCmd && !isUser){
 //━━━━━━━━━━━━━━━[ CONNECTION 3 ]━━━━━━━━━━━━━━━━━//
 
 		colors = ['red', 'white', 'black', 'blue', 'yellow', 'green']
-		const isMedia = (type === 'imageMessage' || type === 'videoMessage')
-		const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
-		const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
-		const isQuotedAudio = type === 'extendedTextMessage' && content.includes('audioMessage')
-		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
+		let isMedia = (type === 'imageMessage' || type === 'videoMessage')
+		let isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
+		let isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
+		let isQuotedAudio = type === 'extendedTextMessage' && content.includes('audioMessage')
+		let isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
       	if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
       	//if (!isGroup && !isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mTEXT\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
      	if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
@@ -375,7 +375,7 @@ switch (command) {
 	case 'menu':
 	gambar = fs.readFileSync('./zeroyt7/zero.jpg')
                    timestamp = speed();
-				latensi = speed() - timestamp
+				latensi = speed() - timestamp	
               menunya = 
 `Hi ${pushname}, ${tampilUcapan}✨
 Saya ${botname} Yg Siap Membantu Anda Dalam Kinerja Whatsapp Agar Mempermudah Seperti Membuat Sticker , Dll
@@ -711,8 +711,8 @@ case 'sticker':
 case 'stiker':
 case 's':
 if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-const media = await zeroyt7.downloadAndSaveMediaMessage(encmedia, './database/media_user')
+let encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
+let media = await zeroyt7.downloadAndSaveMediaMessage(encmedia, './database/media_user')
 ran = getRandom('.webp')
 await ffmpeg(`./${media}`)
 .input(media)
@@ -735,8 +735,8 @@ fs.unlinkSync(ran)
 .toFormat('webp')
 .save(ran)
 } else if ((isMedia && mek.message.videoMessage.seconds < 11 || isQuotedVideo && mek.message.extendedTextMessage.contextInfo.quotedMessage.videoMessage.seconds < 11) && args.length == 0) {
-const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-const media = await zeroyt7.downloadAndSaveMediaMessage(encmedia, './database/media_user')
+let encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
+let media = await zeroyt7.downloadAndSaveMediaMessage(encmedia, './database/media_user')
 ran = getRandom('.webp')
 reply(mess.wait)
 await ffmpeg(`./${media}`)
@@ -760,8 +760,8 @@ fs.unlinkSync(ran)
 .toFormat('webp')
 .save(ran)
 } else if ((isMedia || isQuotedImage) && args[0] == 'nobg') {
-const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-const media = await zeroyt7.downloadAndSaveMediaMessage(encmedia, './database/media_user')
+let encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
+let media = await zeroyt7.downloadAndSaveMediaMessage(encmedia, './database/media_user')
 ranw = getRandom('.webp')
 ranp = getRandom('.png')
 reply(mess.wait)
@@ -830,7 +830,7 @@ break
 case 'owner':
 let inilist = []
 for (let i of ownerNumber) {
-const vname = zeroyt7.contacts[i] != undefined ? zeroyt7.contacts[i].vname || zeroyt7.contacts[i].notify : undefined
+let vname = zeroyt7.contacts[i] != undefined ? zeroyt7.contacts[i].vname || zeroyt7.contacts[i].notify : undefined
 inilist.push({
 "displayName": 'ZeroYT7',
 "vcard": 'BEGIN:VCARD\n'
@@ -863,7 +863,7 @@ if (!isOwner) return reply('LU BUKAN OWNER GBLOK')
 if (args.length < 1) return reply('.......')
 anu = await zeroyt7.chats.all()
 if (isMedia && !mek.message.videoMessage || isQuotedImage) {
-const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
+let encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 bc = await zeroyt7.downloadMediaMessage(encmedia)
 for (let _ of anu) {
 zeroyt7.sendMessage(_.jid, bc, image, { caption: `[ Izin Broadcast ]\n\n${body.slice(4)}` })
@@ -877,10 +877,10 @@ reply('Suksess broadcast')
 }
 break
 case 'report':
-const pesan = body.slice(8)
+let pesan = body.slice(8)
 if (pesan.length > 300) return pras.sendMessage(from, 'Maaf Teks Terlalu Panjang, Maksimal 300 Teks', text, { quoted: ftrol })
 var nomor = mek.participant
-const teks1 = `*[REPORT]*\nNomor : @${nomor.split("@s.whatsapp.net")[0]}\nPesan : ${pesan}`
+let teks1 = `*[REPORT]*\nNomor : @${nomor.split("@s.whatsapp.net")[0]}\nPesan : ${pesan}`
 var options = {
 text: teks1,
 contextInfo: { mentionedJid: [nomor] },
@@ -903,9 +903,6 @@ teks =
 `Nih Tiktok Owner Ku Jangan Lupa Di Follow Ya https://tiktok.com/@_zeroyt7`
 zeroyt7.sendMessage(from, teks, text, {quoted: ftrol})
 break
-
-// SC ORI + CREATOR BASE JANGAN DI HPUS TOD
-//HARGAI CREATOR
 case 'sourcecode':
 case 'script':
 case 'sc':
