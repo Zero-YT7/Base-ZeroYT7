@@ -8,7 +8,7 @@
 //TIKTOK : @_zeroyt7
 //GITHUB : Zero-YT7
 
-let { fetchJosn, fetchText } = require('./lib/fetcher')
+let { fetchJosn, kyun, fetchText } = require('./lib/fetcher')
 let { color, bgcolor } = require('./lib/color')
 let { wait, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, start, info, success, close } = require('./lib/functions')
 
@@ -914,6 +914,26 @@ teks =
 ├ Creator Sc = Zero YT7
 └─────────────────────`
 zeroyt7.sendMessage(from, teks, text, {quoted: ftrol})
+break
+
+//━━━━━━━━━━━━━━━[ INFO BOT ]━━━━━━━━━━━━━━━━━//
+
+case "speed":
+case "ping":
+const timestamp = speed();
+const latensi = speed() - timestamp;
+exec(`neofetch --stdout`, (error, stdout, stderr) => {
+const child = stdout.toString("utf-8");
+const ssd = child.replace(/Memory:/, "Ram:");
+const pingnya = `*${ssd}Speed: ${latensi.toFixed(4)} Second*`;
+reply(pingnya);
+});
+break
+case "runtime":
+case "test":
+run = process.uptime();
+teks = `${kyun(run)}`;
+reply(teks);
 break
 default:
 if (isOwner) {
