@@ -920,12 +920,12 @@ break
 
 case "speed":
 case "ping":
-const timestamp = speed();
-const latensi = speed() - timestamp;
+timestamp = speed();
+latensi = speed() - timestamp;
 exec(`neofetch --stdout`, (error, stdout, stderr) => {
-const child = stdout.toString("utf-8");
-const ssd = child.replace(/Memory:/, "Ram:");
-const pingnya = `*${ssd}Speed: ${latensi.toFixed(4)} Second*`;
+child = stdout.toString("utf-8");
+ssd = child.replace(/Memory:/, "Ram:");
+pingnya = `*${ssd}Speed: ${latensi.toFixed(4)} Second*`;
 reply(pingnya);
 });
 break
