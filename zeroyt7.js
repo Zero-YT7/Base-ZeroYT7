@@ -860,21 +860,19 @@ await zeroyt7.sendMessage(from, buttons, MessageType.buttonsMessage, {quoted: ft
 break
 case 'bc':
 if (!isOwner) return reply('LU BUKAN OWNER GBLOK')
-if (args.length < 1) return reply('.......')
+if (args.length < 1) return reply('Teksnya?')
 anu = await zeroyt7.chats.all()
-if (isMedia && !mek.message.videoMessage || isQuotedImage) {
-let encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-bc = await zeroyt7.downloadMediaMessage(encmedia)
 for (let _ of anu) {
-zeroyt7.sendMessage(_.jid, bc, image, { caption: `[ Izin Broadcast ]\n\n${body.slice(4)}` })
+buttonss = [{buttonId: `${prefix}menu`, buttonText: {displayText: 'MENU'}, type: 1},{buttonId: `${prefix}sewabot`, buttonText: {displayText: 'SEWA BOT'}, type: 1}]
+const btnbc = {
+contentText: `${q}`,
+footerText: '*SILAHKAN TEKAN BUTTON UNTUK INFORMASI LANJUT*',
+buttons: buttonss,
+headerType: 1
 }
-reply('Suksess broadcast')
-} else {
-for (let _ of anu) {
-sendMess(_.jid, `[ *BOT BROADCAST* ]\n\n${body.slice(4)}`)
+await zeroyt7.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: ftrol})
 }
-reply('Suksess broadcast')
-}
+reply(`Sukses mengirim Broadcast:\n${q}`)
 break
 case 'report':
 let pesan = body.slice(8)
