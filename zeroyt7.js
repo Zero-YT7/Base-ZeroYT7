@@ -429,8 +429,8 @@ Saya ${botname} Yg Siap Membantu Anda Dalam Kinerja Whatsapp Agar Mempermudah Se
 teks =
 `Ini Base Buatan Zero YT7 Silahkan Di Pake Jika Ingin Recode Atau Reupload Tolong Creator Jangan Hpus Tolong Hargai Karya Orang 🙏`
 but = [
-          { buttonId: `${prefix}infobot`, buttonText: { displayText: 'INFO' }, type: 1 },
-          { buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER' }, type: 1 }
+          { buttonId: `${prefix}infobot`, buttonText: { displayText: '☰ INFO' }, type: 1 },
+          { buttonId: `${prefix}owner`, buttonText: { displayText: '☰ OWNER' }, type: 1 }
         ]
         sendButLocation(from, menunya, teks, gambar, but)
 break
@@ -454,8 +454,8 @@ timestamp = speed();
 *┃◗ Thanks To All Subscriberku*
 *┗━━━━━━━ •*`
                   but = [
-          { buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER' }, type: 1 },
-          { buttonId: `${prefix}sc`, buttonText: { displayText: 'SCRIPT' }, type: 1 }
+          { buttonId: `${prefix}owner`, buttonText: { displayText: '☰ OWNER' }, type: 1 },
+          { buttonId: `${prefix}sc`, buttonText: { displayText: '☰ SCRIPT' }, type: 1 }
         ]
         sendButton(from, teks, '©Created : Zero YT7', but, mek)
 break
@@ -467,8 +467,8 @@ if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
 but = [
-{ buttonId: '!welcomeon', buttonText: { displayText: 'On' }, type: 1 },
-{ buttonId: '!welcomeoff', buttonText: { displayText: 'Off' }, type: 1 }
+{ buttonId: '!welcomeon', buttonText: { displayText: '☰ ON' }, type: 1 },
+{ buttonId: '!welcomeoff', buttonText: { displayText: '☰ OFF' }, type: 1 }
 ]
 sendButton(from, "Silahkan pilih untuk welcome group", faketeks, but, mek)
 break
@@ -495,8 +495,8 @@ if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
 but = [
-{ buttonId: '!antilinkon', buttonText: { displayText: 'On' }, type: 1 },
-{ buttonId: '!antilinkoff', buttonText: { displayText: 'Off' }, type: 1 }
+{ buttonId: '!antilinkon', buttonText: { displayText: '☰ ON' }, type: 1 },
+{ buttonId: '!antilinkoff', buttonText: { displayText: '☰ OFF' }, type: 1 }
 ]
 sendButton(from, "Silahkan pilih untuk antilink group", faketeks, but, mek)
 break
@@ -523,8 +523,8 @@ if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
 but = [
-{ buttonId: '!antivirtexon', buttonText: { displayText: 'On' }, type: 1 },
-{ buttonId: '!antivirtexoff', buttonText: { displayText: 'Off' }, type: 1 }
+{ buttonId: '!antivirtexon', buttonText: { displayText: '☰ ON' }, type: 1 },
+{ buttonId: '!antivirtexoff', buttonText: { displayText: '☰ OFF' }, type: 1 }
 ]
 sendButton(from, "Silahkan pilih untuk antivirtex group", faketeks, but, mek)
 break
@@ -551,8 +551,8 @@ if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isGroup) return reply(mess.only.group)
 if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
 but = [
-{ buttonId: '!groupbuka', buttonText: { displayText: 'Buka' }, type: 1 },
-{ buttonId: '!geouptutup', buttonText: { displayText: 'Tutup' }, type: 1 }
+{ buttonId: '!groupbuka', buttonText: { displayText: '☰ BUKA' }, type: 1 },
+{ buttonId: '!geouptutup', buttonText: { displayText: '☰ TUTUP' }, type: 1 }
 ]
 sendButton(from, "Silahkan pilih untuk buka/tutup group", faketeks, but, mek)
 break
@@ -846,9 +846,9 @@ hehe = await zeroyt7.sendMessage(from, {
 "contacts": inilist 
 }, 'contactsArrayMessage', { quoted: ftrol })
 button = [
-  {buttonId: '.youtube', buttonText: {displayText: 'YOUTUBE'}, type: 1},
-  {buttonId: '.instagram', buttonText: {displayText: 'INSTAGRAM'}, type: 1},
-  {buttonId: '.tiktok', buttonText: {displayText: 'TIKTOK'}, type: 1}
+  {buttonId: '.youtube', buttonText: {displayText: '☰ YOUTUBE'}, type: 1},
+  {buttonId: '.instagram', buttonText: {displayText: '☰ INSTAGRAM'}, type: 1},
+  {buttonId: '.tiktok', buttonText: {displayText: '☰ TIKTOK'}, type: 1}
 ]
  buttons = {
     contentText: 'Nih Nomer Owner Ku Mau Tau Tentang Apa Ya ?',
@@ -863,7 +863,7 @@ if (!isOwner) return reply('LU BUKAN OWNER GBLOK')
 if (args.length < 1) return reply('Teksnya?')
 anu = await zeroyt7.chats.all()
 for (let _ of anu) {
-buttonss = [{buttonId: `${prefix}menu`, buttonText: {displayText: 'MENU'}, type: 1},{buttonId: `${prefix}sewabot`, buttonText: {displayText: 'SEWA BOT'}, type: 1}]
+buttonss = [{buttonId: `${prefix}menu`, buttonText: {displayText: '☰ MENU'}, type: 1},{buttonId: `${prefix}sewabot`, buttonText: {displayText: '☰ SEWA BOT'}, type: 1}]
 const btnbc = {
 contentText: `${q}`,
 footerText: '*SILAHKAN TEKAN BUTTON UNTUK INFORMASI LANJUT*',
