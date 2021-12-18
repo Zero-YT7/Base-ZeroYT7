@@ -49,7 +49,7 @@ let pendaftar = JSON.parse(fs.readFileSync('./database/user.json'))
 //━━━━━━━━━━━━━━━[ SETTING ]━━━━━━━━━━━━━━━━━//
 
 owner = 6281318703933
-botname = RAKA BOTZ
+botname = Raka V20
 zerokey = ZeroKey
 ownername = RAKA STORE
 
