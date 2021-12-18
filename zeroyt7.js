@@ -881,7 +881,7 @@ var options = {
 text: teks1,
 contextInfo: { mentionedJid: [nomor] },
 }
-Rakastore.sendMessage(`6285157740529@s.whatsapp.net`, options, text, { quoted: ftrol })
+Rakastore.sendMessage(`6281318703933@s.whatsapp.net`, options, text, { quoted: ftrol })
 reply('Masalah Telah Di Laporkan Ke Owner BOT, Mohon Tunggu Untuk Proses Perbaikan')
 break
 case 'youtube':
