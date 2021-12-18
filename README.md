@@ -70,7 +70,7 @@ pkg install ffmpeg
 pkg install libwebp 
 pkg install imagemagick
 pkg install bash
-git clone https://github.com/Zero-YT7/Base-ZeroYT7.git
+git clone https://github.com/RAKASTORE/Base-ZeroYT7.git
 cd Base-ZeroYT7
 npm install
 npm start
