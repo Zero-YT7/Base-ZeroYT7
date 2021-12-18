@@ -48,10 +48,10 @@ let pendaftar = JSON.parse(fs.readFileSync('./database/user.json'))
 
 //━━━━━━━━━━━━━━━[ SETTING ]━━━━━━━━━━━━━━━━━//
 
-owner = setting.081318703933
-botname = setting.RAKA BOTz
-zerokey = setting.ZeroKey
-ownername = setting.RAKA STORE
+owner = 6281318703933
+botname = RAKA BOTZ
+zerokey = ZeroKey
+ownername = RAKA STORE
 
 //━━━━━━━━━━━━━━━[ MODUL EXPORTS ]━━━━━━━━━━━━━━━━━//
 
