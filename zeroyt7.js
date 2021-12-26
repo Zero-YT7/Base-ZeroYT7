@@ -1,12 +1,10 @@
-//NEW BASE BY ZERO YT7
+//NEW BASE BY RAKA STORE
 //RECODE SESUKA HATIMU JANGAN HPUS CREATOR NYA
 //MAAF BASE NYA JELEK
 
 //FOLLOW ALL SOSIAL MEDIAML ME
-//YOUTUBE : Zero YT7
-//INSTAGRAM : @Zero_YT7
-//TIKTOK : @_zeroyt7
-//GITHUB : Zero-YT7
+//TIKTOK : @rakasadboi
+//GITHUB : RAKASTORE2677
 
 let { fetchJosn, kyun, fetchText } = require('./lib/fetcher')
 let { color, bgcolor } = require('./lib/color')
@@ -50,10 +48,10 @@ let pendaftar = JSON.parse(fs.readFileSync('./database/user.json'))
 
 //━━━━━━━━━━━━━━━[ SETTING ]━━━━━━━━━━━━━━━━━//
 
-owner = setting.OwnerNumber
-botname = setting.BotName
-zerokey = setting.ZeroKey
-ownername = setting.OwnerName
+owner = 6281318703933
+botname = Raka V20
+zerokey = ZeroKey
+ownername = RAKA STORE
 
 //━━━━━━━━━━━━━━━[ MODUL EXPORTS ]━━━━━━━━━━━━━━━━━//
 
@@ -381,10 +379,10 @@ switch (command) {
 Saya ${botname} Yg Siap Membantu Anda Dalam Kinerja Whatsapp Agar Mempermudah Seperti Membuat Sticker , Dll
 
 ╭─❒ 「 Bot Info 」 ❒
-├ Nama Bot : ${botname}
-├ Nama Owner : ${ownername}
+├ Nama Bot : ${RakaBotz}
+├ Nama Owner : ${Raka Store}
 ├ Prefix : Multi Prefix
-├ Nomor Owner : ${owner.split('@')[0]}
+├ Nomor Owner : ${6281318703933.split('@')[0]}
 ├ Runtime : ${runtime(process.uptime())}
 ├ Language : Javascript & Nodejs
 ├ Totan Pengguna : ${pendaftar.length}
@@ -427,7 +425,7 @@ Saya ${botname} Yg Siap Membantu Anda Dalam Kinerja Whatsapp Agar Mempermudah Se
 │ あ ${prefix}report
 └⬣`
 teks =
-`Ini Base Buatan Zero YT7 Silahkan Di Pake Jika Ingin Recode Atau Reupload Tolong Creator Jangan Hpus Tolong Hargai Karya Orang 🙏`
+`Ini Base Buatan RAKA STORE Silahkan Di Pake Jika Ingin Recode Atau Reupload Tolong Creator Jangan Hpus Tolong Hargai Karya Orang 🙏`
 but = [
           { buttonId: `${prefix}infobot`, buttonText: { displayText: '☰ INFO' }, type: 1 },
           { buttonId: `${prefix}owner`, buttonText: { displayText: '☰ OWNER' }, type: 1 }
@@ -439,9 +437,9 @@ timestamp = speed();
 				latensi = speed() - timestamp
                   	teks =
 `┏━➤ *INFO BOT* 
-*┃┃* Creator Bot : Zero YT7
-*┃┃* Nama Owner : ${ownername}
-*┃┃* Nama Bot : ${botname}
+*┃┃* Creator Bot : RAKA STORE
+*┃┃* Nama Owner : ${RAKA STORE}
+*┃┃* Nama Bot : ${RAKA BOTz}
 *┃┃* Prefix : Multi Prefix
 *┃┃* Total Pengguna : ${pendaftar.length}
 *┃┃* Runtime : ${runtime(process.uptime())}
@@ -450,14 +448,14 @@ timestamp = speed();
 *┃┗━━━━━━━━*
 *┃◗ Thanks To Allah S.W.T*
 *┃◗ Thank To Ortu*
-*┃◗ Thank To Zero YT7 (Creator)*
+*┃◗ Thank To Raka Store (Creator)*
 *┃◗ Thanks To All Subscriberku*
 *┗━━━━━━━ •*`
                   but = [
           { buttonId: `${prefix}owner`, buttonText: { displayText: '☰ OWNER' }, type: 1 },
           { buttonId: `${prefix}sc`, buttonText: { displayText: '☰ SCRIPT' }, type: 1 }
         ]
-        sendButton(from, teks, '©Created : Zero YT7', but, mek)
+        sendButton(from, teks, '©Created : Raka STORE', but, mek)
 break
 	
 //━━━━━━━━━━━━━━━[ FITUR GROUP ]━━━━━━━━━━━━━━━━━//
@@ -829,14 +827,14 @@ break
 
 case 'owner':
 let inilist = []
-for (let i of ownerNumber) {
-let vname = zeroyt7.contacts[i] != undefined ? zeroyt7.contacts[i].vname || zeroyt7.contacts[i].notify : undefined
+for (let i of 6281318703933) {
+let vname = Raka Store.contacts[i] != undefined ? zeroyt7.contacts[i].vname || zeroyt7.contacts[i].notify : undefined
 inilist.push({
-"displayName": 'ZeroYT7',
+"displayName": 'RakaSTORE',
 "vcard": 'BEGIN:VCARD\n'
 + 'VERSION:3.0\n'
-+ `FN:${ownername}\n`
-+ `ORG: Creator ${ownername} ;\n`
++ `FN:${Raka STORE}\n`
++ `ORG: Creator ${Raka STORE} ;\n`
 + `TEL;type=CELL;type=VOICE;waid=${owner}:${owner}\n`
 + 'END:VCARD'.trim()
 })
@@ -883,23 +881,23 @@ var options = {
 text: teks1,
 contextInfo: { mentionedJid: [nomor] },
 }
-zeroyt7.sendMessage(`6285157740529@s.whatsapp.net`, options, text, { quoted: ftrol })
+Rakastore.sendMessage(`6281318703933@s.whatsapp.net`, options, text, { quoted: ftrol })
 reply('Masalah Telah Di Laporkan Ke Owner BOT, Mohon Tunggu Untuk Proses Perbaikan')
 break
 case 'youtube':
 teks =
 `Nih Youtube Owner Ku Jangan Lupa Di Subscribe Ya https://youtube.com/ZeroYT7`
-zeroyt7.sendMessage(from, teks, text, {quoted: ftrol})
+Raka Store.sendMessage(from, teks, text, {quoted: ftrol})
 break
 case 'instagram':
 teks =
 `Nih Instagram Owner Ku Jangan Lupa Di Follow Ya https://instagram.com/Zero_YT7`
-zeroyt7.sendMessage(from, teks, text, {quoted: ftrol})
+Raka store.sendMessage(from, teks, text, {quoted: ftrol})
 break
 case 'tiktok':
 teks =
 `Nih Tiktok Owner Ku Jangan Lupa Di Follow Ya https://tiktok.com/@_zeroyt7`
-zeroyt7.sendMessage(from, teks, text, {quoted: ftrol})
+Raka store.sendMessage(from, teks, text, {quoted: ftrol})
 break
 case 'sourcecode':
 case 'script':
@@ -907,13 +905,13 @@ case 'sc':
 teks = 
 `*Bot Ini Menggunakan Sourcecode*
 ╭─────────────────────
-├ Sc Ori = https://github.com/Zero-YT7/Base-ZeroYT7
-├ Sc Full Fitur = https://youtube.com/ZeroYT7
+├ Sc Ori = https://github.com/RAKASTORE2677/Base-ZeroYT7
+├ Sc Full Fitur = CHT OWNER AJA KAK
 ├─────────────────────
-├ Creator Base = Zero YT7
-├ Creator Sc = Zero YT7
+├ Creator Base = RAKA STORE
+├ Creator Sc = RAKA STORE
 └─────────────────────`
-zeroyt7.sendMessage(from, teks, text, {quoted: ftrol})
+rakastore.sendMessage(from, teks, text, {quoted: ftrol})
 break
 
 //━━━━━━━━━━━━━━━[ INFO BOT ]━━━━━━━━━━━━━━━━━//
@@ -949,7 +947,7 @@ if (isOwner) {
 			} else if (budy.startsWith('x')) {
 				console.log(color('[EVAL2]'), color(moment(mek.messageTimestamp * 1000).format('DD/MM/YY HH:mm:ss'), 'yellow'), color(`eval identy`))
 				try {
-					return zeroyt7.sendMessage(from, JSON.stringify(eval(budy.slice(2)), null, '\t'), text, { quoted: ftrol })
+					return rakastore.sendMessage(from, JSON.stringify(eval(budy.slice(2)), null, '\t'), text, { quoted: ftrol })
 				} catch (err) {
 					e = String(err)
 					reply(e)
