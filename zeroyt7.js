@@ -8,7 +8,7 @@
 //TIKTOK : @_zeroyt7
 //GITHUB : Zero-YT7
 
-let { fetchJosn, kyun, fetchText } = require('./lib/fetcher')
+let { fetchJson, kyun, fetchText } = require('./lib/fetcher')
 let { color, bgcolor } = require('./lib/color')
 let { wait, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, start, info, success, close } = require('./lib/functions')
 
