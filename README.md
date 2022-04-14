@@ -7,7 +7,7 @@
 
 - 👼 My name is Zero YT7
 
-- 🗣️ I am 18 years old 
+- 🗣️ I am 19 years old 
 
 - 🔭 I am Not programmer
  
@@ -96,4 +96,12 @@ cd Base-ZeroYT7
 npm install
 npm start
 ```
-
+## Big Thanks To
+```
+• Zero YT7
+• Chaliph
+• Allah S.W.T
+• Ortu
+• All Creator Bot
+• All Subscriber Ku
+```
